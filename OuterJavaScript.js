@@ -1,1 +1,1 @@
-alert("OuterScript")
+alert("팝업을 하나 띄워보자")
