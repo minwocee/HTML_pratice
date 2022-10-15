@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #header h1 {color: red;}    /*후손 선택자를 지정한다 부모: header 자손 :h1*/
+            #section h1 {color: orange;}
+            #header h2 #header h3 {color: blue;}/*헤더태그의 후손인 h2, h3를 여러개 사용할떄를 유의*/
+        </style>
+
+    </head>
+    <body>
+        <div id="header">
+            <h1 class="titile">Lorem ipsum</h1>
+            
+            <div id="nav">
+                <h1>Navigation 글자의 색상을 주목 하라</h1>
+            </div>
+        
+        </div>
+        <div id="section">
+            <h1 class="titile">Lorem ipsum</h1>    <!--이건 오렌지 색으로 출력 된다.-->
+            <p>가나다라마ㅏㅏ나ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</p>
+            <!--위의 p태그는 후손으로 설정되지 않았으므로 그냥 검은색으로 출력이 된다.-->
+        </div>
+
+
+    </body>
+</html>
