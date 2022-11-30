@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                position: absolute;   /*고정된 절대위치를 지정함*/
+            }
+
+            .box:nth-child(1){/*첫번째 자식의 위치를 지정함*/
+                background-color: red;
+                left: 10px;
+                top: 10px;
+                
+                /*(10,10)의 좌표를 지정함*/
+            }
+
+            .box:nth-child(2){
+                background-color: green;
+                left: 50px;
+                top: 50px;
+                
+            }
+
+            .box:nth-child(3){
+                background-color: blue;
+                left: 90px;
+                top: 90px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <p>컴퓨터공학과, 2학년, 금(오전반), 20180876</p>
+    </body>
+</html>
