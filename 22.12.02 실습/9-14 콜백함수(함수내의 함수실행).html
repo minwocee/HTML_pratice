@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calltentime(my_call){// 10회 반복을 진행하는 것 
+                for (var i=0 ; i<10;i++){
+                    my_call();
+                }
+            };
+
+            var my_call = function(){
+                alert('함수를 호출했습니다~');
+
+            };
+
+            calltentime(my_call);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
