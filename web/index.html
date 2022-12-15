@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>메인 홈페이지</title>
+        <style>
+            body{     /*기본 바디 설정*/
+                width: 100%;
+                height: 100%;
+                background-color: #E8E8E8;
+                margin: 0 auto;
+            }
+            .top_view{     /*메인 화면의 상단 이미지 설정*/
+                background-color: #BBD1E8;
+                position: relative;
+                top: 0%;
+                left: 0%;
+                right: 0%;
+                height: 150px;
+                text-align: center;
+                font-size: 80px;
+                font-weight: 600;
+                
+                padding-top: 30px;
+            }
+
+            .main-navi{    /*메인 화면의 네비게이션바 설정*/
+                border: 3px solid black;
+                height: 40px;
+                float: left;
+                position: relative;
+                width: 100%;
+                
+            }
+
+            div.lis{     /*네비게이션바 설정*/
+                border-radius: 5px;
+                border: 1px;
+                display: inline;
+                float: left;
+                font-size: 30px;
+                position: relative;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: #82D580;
+            }
+            div a{     /*네비게이션바의 앵커태그 밑줄 제거*/
+                text-decoration: none;
+                color: black;
+            }
+            
+            .main_con{     /*화면 전체를 사용한다는 의미*/
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+            }
+            .main_con_left{      /*좌측 지정*/
+                float: left;
+                width: 12%;
+                position: fixed;
+                border: 4px solid #FF689F;
+            }
+            
+            .main_con_center{     /*중앙지정*/
+                margin-left: 18%;
+                float: left;
+                width: 60%;
+                border: 2px solid black;
+                position: scroll;
+                overflow:hidden;
+            }
+
+            .main_con_right{    /*우측 지점*/
+                float: left;
+                width: 20%;
+                border: 2px solid black;
+                position: scroll;
+                overflow:hidden;
+                margin-left: 1%;
+            }
+            #textcenter{     /*글자 중앙 정렬*/
+                text-align: center   ;
+                
+            }
+            #fontsize{     /*퀵메뉴*/
+                font-size: 25px;
+            }
+
+            .center_prolog{     /*본문 요소 한 문단*/
+                position: relative;
+                margin: 10px auto;
+                padding: 5px;
+                width: 80%;
+                border: 5px solid rgb(0, 157, 224);
+            }
+
+            #pic{     /*사진 크기 설정*/
+                width: 100px;
+                height: 100px;
+            }
+
+            #pic2{
+                width: 300px;
+                height: 100px;
+            }
+
+            #back{     /*본문 중앙*/
+                background-color: #95E0C8;
+            }
+
+            .footer{
+                position: relative;
+                bottom: 0%;
+                left: 0%;
+                right: 0%;
+                background-color: cornflowerblue;
+                border: 3px solid black;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_view">천민우의 코딩 세상</div>    <!---->
+        <div class="main-navi"><!--네비게이션바 역할-->
+            <div class="lis"><a href='#' class="ac">Python</a></div>
+            <div class="lis"><a href='#' class="ac">C++</a></div>
+            <div class="lis"><a href='#' class="ac">HTML</a></div>
+            <div class="lis"><a href='#' class="ac">JV Script</a></div>
+            <div class="lis"><a href='#' class="ac">학교생활</a></div>
+        </div>
+
+        <div class="main_con">    <!--본문  구성 -->
+            <div class="main_con_left">    <!--본문 좌측 구성-->
+                <h1 id="textcenter">(퀵메뉴)</h1>
+                <li id="fontsize">Python</li>
+                <li id="fontsize">C++</li>
+                <li id="fontsize">HTML</li>
+                <li id="fontsize">JV Script</li>
+                <li id="fontsize">학교생활</li>
+                <p> </p>
+                
+                <li id="fontsize"><a href="#">Go TOP</a></li>
+            </div>
+
+            <div class="main_con_center" id="back"><!--본문 중앙 구성-->
+                <div class="center_prolog"><!-- 파이썬 웹페이지 -->
+                    <div>
+                        <img src="Python_logo_and_wordmark.svg.png" id="pic2">
+                        <h1><a href="" >#파이썬 기초 문법 정리</a></h1>
+                    </div>
+                </div>
+                <div class="center_prolog"><!-- HTML 웹페이지 -->
+                    <div>
+                        <img src="html_logo.png" id="pic">
+                        <h1><a href="" >#HTML 기초 문법 정리</a></h1>
+                    </div>
+                </div>
+                <div class="center_prolog"><!-- JAVA 웹페이지 -->
+                    <div>
+                        <img src="java.jpg" id="pic">
+                        <h1><a href="" >#JAVA 기초 문법 정리</a></h1>
+                    </div>
+                </div>
+                <div class="center_prolog"><!-- C++ 소개 웹페이지-->
+                    <div>
+                        <img src="ISO_C++_Logo.svg.png" id="pic">
+                        <h1><a href="" >#C++ 기초 문법 정리</a></h1>
+                    </div>
+                </div>
+                <div class="center_prolog"><!-- 일상생활 소개 웹페이지-->
+                    <div>
+                        <img src="sku_logo.png" id="pic2">
+                        <h1><a href="" >#성결대학교 일상 생활 기록</a></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_con_right"><!--본문 우측 구성-->
+                <h1>1231213131231123121313123112312131312311231213131231123121313123112312131312311231213131231</h1>
+                <h1>1231213131231123121313123112312131312311231213131231123121313123112312131312311231213131231</h1>
+                <h1>1231213131231123121313123112312131312311231213131231123121313123112312131312311231213131231</h1>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <h3><a href="mailto:minwocee@naver.com">메일전송(클릭)</a>  phone: 010-4783-2349</h3>
+            <h3>Created by 컴퓨터공학과, 2학년, 오전반, 20180876, 천민우</h3>
+        </div>
+    </body>
+</html>

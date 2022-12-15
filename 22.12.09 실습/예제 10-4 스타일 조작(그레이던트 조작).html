@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function(){
+            var output ='';
+            for (var i = 0;i<256;i++){
+                output+='<div></div>'
+            }
+
+            document.body.innerHTML = output;
+
+            var divs = document.querySelectorAll('div');
+
+            for (var i=0;i<divs.length;i++){
+                var div = divs[i];
+
+                div.style.height = '2px';
+                div.style.background = 'rgb('+ i +','+ i +','+ i +')';
+            }
+            };
+        </script>
+    </head>
+    <body>
+        <h1>프로세스 1번</h1>
+        <h2>프로세스 2번</h2>
+        
+    </body>
+</html>
