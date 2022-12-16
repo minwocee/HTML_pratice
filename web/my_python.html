@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>메인 홈페이지</title>
         <style>
             body{     /*기본 바디 설정*/
                 width: 100%;
@@ -22,7 +21,6 @@
                 
                 padding-top: 30px;
             }
-
             .main-navi{    /*메인 화면의 네비게이션바 설정*/
                 border: 3px solid black;
                 height: 40px;
@@ -137,17 +135,25 @@
             }
             #blue{
                 color: blue;
+                
+            }
+            #red{
+                color: red;
+                
             }
             #mimg{
                 width: 150px;
                 height: 150px;
                 float: right;
             }
+            #overlof{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
         </style>
-        
         <script>
-            // 현재 시간을 출력하는 함수
-                window.onload = function () {
+            window.onload = function () {
                 
                 var clock = document.getElementById('clock');
                 
@@ -156,10 +162,8 @@
                     clock.innerHTML = now.toString();
                     }, 1000);
                 }
-                
         </script>
     </head>
-    <!--*********************************************************************************************************************-->
     <body>
         <div class="top_view"><a href="https://www.sungkyul.ac.kr/skukr/index.do"><img src="성결대 로고.png"></a> <a href="index.html">천민우의 코딩 세상</a><a href="https://www.youtube.com/watch?v=b-6dECFziyQ"><img id="mimg" src="KakaoTalk_20221216_164300685.jpg"></a></div>    <!---->
         <div class="main-navi"><!--네비게이션바 역할-->
@@ -169,14 +173,13 @@
             <div class="lis"><a href='my_javascript.html' class="ac">JV Script</a></div>
             <!--<div class="lis"><a href='#' class="ac">학교생활</a></div>-->
         </div>
-
         <div class="main_con">    <!--본문  구성 -->
             <div class="main_con_left">    <!--본문 좌측 구성-->
                 <h1 id="textcenter">(퀵메뉴)</h1>
                 <li id="fontsize"><a href="my_python.html">Python</a></li>
                 <li id="fontsize">C++</li>
                 <li id="fontsize"><a href="myhtml.html">HTML</a></li>
-                <li id="fontsize"><a href="my_javascript.html">JV Script</a></li>
+                <li id="fontsize"><a href='my_javascript.html'>JV Script</a></li>
                 <!--<li id="fontsize">학교생활</li>-->
                 <p> </p>
                 
@@ -187,33 +190,49 @@
                 <div class="center_prolog"><!-- 파이썬 웹페이지 -->
                     <div>
                         <img src="Python_logo_and_wordmark.svg.png" id="pic2">
-                        <h1><a href="my_python.html" >#파이썬 기초 문법 정리</a></h1>
+                        <h1>파이썬 기초 문법 정리 (1)</h1>
+                        <h2><a id='red' href="https://drive.google.com/file/d/1jWbvix3bkejOihNNgPDRRIf_sc-1WEOD/view?usp=share_link">1장 강의자료 (김상근 교수님 협찬)</a></h2>
+                        <h3 id="overlof"><a href="https://github.com/minwocee/Python_pratice/blob/main/%EC%A0%84%EA%B3%B5%20%ED%8C%8C%EC%9D%B4%EC%8D%AC/5%EC%9E%A5%20%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%2C%EC%A7%91%ED%95%A9.py">#          (클릭하기)22.10.10  딕셔너리(dictionary)정리
+                            # 딕셔너리(dictionary)는 사전처럼 2개의 요소를 하나로 묶어서 표현된다.
+                            # 중괄호{} 으로 묶어서 구성되며 키(key)와 값(Value)의 쌍으로 구성
+                            # 형식: dictionary_name= {key1:value1, key2:value2, key3: value3...}
+                            # 기존 생성한 딕셔너리에 key-value 추가하는법: dicname[key값]=value값    (인덱스[]괄호처럼 중괄호 임을 유의하자)
+                            # 리스트나 튜플처럼 순차적(sequential)으로 해당 요소값을 구하지 않고 key를 거쳐서 value를 얻는다.
+                            # 순서가 없으므로 인덱스 번호를 이용한 접근 불가, key를 이용해 접근해야 한다.
+                            </a>
+                        </h3>                          
+                        
                     </div>
                 </div>
-                <div class="center_prolog"><!-- HTML 웹페이지 -->
+                <div class="center_prolog"><!-- 파이썬 웹페이지 -->
                     <div>
-                        <img src="html_logo.png" id="pic">
-                        <h1><a href="myhtml.html" >#HTML 기초 문법 정리</a></h1>
+                        <img src="Python_logo_and_wordmark.svg.png" id="pic2">
+                        <h1>파이썬 기초 문법 정리 (2)</h1>
+                        <h2><a id='red' href="https://drive.google.com/file/d/1rkk01KrRWwB90NkOqwfnyU2-xQMjmVC8/view?usp=share_link">2장 강의자료 (김상근 교수님 협찬)</a></h2>
+                        <h3 id="overlof"><a href="https://github.com/minwocee/Python_pratice/blob/main/%EC%A0%84%EA%B3%B5%20%ED%8C%8C%EC%9D%B4%EC%8D%AC/6%EC%9E%A5%20%ED%95%A8%EC%88%98(%EA%B8%B0%EB%A7%90%EC%8B%9C%EC%9E%91).py">#          (클릭하기)#                                <함수의 기초 구조>
+                            from ast import Num
+                            from math import prod
+                            
+                            
+                            def print_star10time():    #별을 10개 출력하는 함수를 만둠
+                                print("*"*10)</a>
                     </div>
                 </div>
-                <div class="center_prolog"><!-- JAVA 웹페이지 -->
+                <div class="center_prolog"><!-- 파이썬 웹페이지 -->
                     <div>
-                        <img src="javascript.png" id="pic2">
-                        <h1><a href="my_javascript.html" >#JAVA Script 기초 문법 정리</a></h1>
+                        <img src="Python_logo_and_wordmark.svg.png" id="pic2">
+                        <h1>파이썬 기초 문법 정리 (3)</h1>
+                        <h2><a id='red' href="https://drive.google.com/file/d/1K4tZWjCBZugsXBqIAnVy62P5CZ6e-Ngq/view?usp=share_link">3장 강의자료 (김상근 교수님 협찬)</a></h2>
+                        <h3 id="overlof"><a href="https://github.com/minwocee/Python_pratice/blob/main/%EC%A0%84%EA%B3%B5%20%ED%8C%8C%EC%9D%B4%EC%8D%AC/7%EC%9E%A5%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.py">#          (클릭하기)#                                """
+                            목차
+                            1. 클래스 선언
+                            2. 메소드
+                            3. 클래스 변수와 인스턴스 변수
+                            4. self
+                            """</a>
                     </div>
                 </div>
-                <div class="center_prolog"><!-- C++ 소개 웹페이지-->
-                    <div>
-                        <img src="ISO_C++_Logo.svg.png" id="pic">
-                        <h1><a href="" >#C++ 기초 문법 정리</a></h1>
-                    </div>
-                </div>
-                <div class="center_prolog"><!-- 일상생활 소개 웹페이지-->
-                    <div>
-                        <img src="sku_logo.png" id="pic2">
-                        <h1><a href="" >#성결대학교 일상 생활 기록</a></h1>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="main_con_right"><!--본문 우측 구성-->

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>메인 홈페이지</title>
         <style>
             body{     /*기본 바디 설정*/
                 width: 100%;
@@ -22,7 +21,6 @@
                 
                 padding-top: 30px;
             }
-
             .main-navi{    /*메인 화면의 네비게이션바 설정*/
                 border: 3px solid black;
                 height: 40px;
@@ -137,17 +135,25 @@
             }
             #blue{
                 color: blue;
+                
+            }
+            #red{
+                color: red;
+                
             }
             #mimg{
                 width: 150px;
                 height: 150px;
                 float: right;
             }
+            #overlof{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
         </style>
-        
         <script>
-            // 현재 시간을 출력하는 함수
-                window.onload = function () {
+            window.onload = function () {
                 
                 var clock = document.getElementById('clock');
                 
@@ -156,27 +162,24 @@
                     clock.innerHTML = now.toString();
                     }, 1000);
                 }
-                
         </script>
     </head>
-    <!--*********************************************************************************************************************-->
     <body>
         <div class="top_view"><a href="https://www.sungkyul.ac.kr/skukr/index.do"><img src="성결대 로고.png"></a> <a href="index.html">천민우의 코딩 세상</a><a href="https://www.youtube.com/watch?v=b-6dECFziyQ"><img id="mimg" src="KakaoTalk_20221216_164300685.jpg"></a></div>    <!---->
         <div class="main-navi"><!--네비게이션바 역할-->
             <div class="lis"><a href='my_python.html' class="ac">Python</a></div>
             <div class="lis"><a href='#' class="ac">C++</a></div>
             <div class="lis"><a href='myhtml.html' class="ac">HTML</a></div>
-            <div class="lis"><a href='my_javascript.html' class="ac">JV Script</a></div>
+            <div class="lis"><a href='my_javascript.html'>JV Script</a></div>
             <!--<div class="lis"><a href='#' class="ac">학교생활</a></div>-->
         </div>
-
         <div class="main_con">    <!--본문  구성 -->
             <div class="main_con_left">    <!--본문 좌측 구성-->
                 <h1 id="textcenter">(퀵메뉴)</h1>
                 <li id="fontsize"><a href="my_python.html">Python</a></li>
                 <li id="fontsize">C++</li>
                 <li id="fontsize"><a href="myhtml.html">HTML</a></li>
-                <li id="fontsize"><a href="my_javascript.html">JV Script</a></li>
+                <li id="fontsize"><a href="myhtml.html">JV Script</a></li>
                 <!--<li id="fontsize">학교생활</li>-->
                 <p> </p>
                 
@@ -184,36 +187,40 @@
             </div>
 
             <div class="main_con_center" id="back"><!--본문 중앙 구성-->
-                <div class="center_prolog"><!-- 파이썬 웹페이지 -->
+                <div class="center_prolog"><!-- HTML 웹페이지 -->
                     <div>
-                        <img src="Python_logo_and_wordmark.svg.png" id="pic2">
-                        <h1><a href="my_python.html" >#파이썬 기초 문법 정리</a></h1>
+                        <img src="html2.png" id="pic2">
+                        <h1>HTML 기초 문법 정리 (1)</h1>
+                        <h2><a id='red' href="https://drive.google.com/file/d/1B4J9jBPgofHCEoOH4YwxBuY67FfsH1Du/view?usp=share_link">1장 강의자료 (심미나 교수님 협찬)</a></h2>
+                        <h3 id="overlof"><a href="https://github.com/minwocee/HTML_pratice/blob/main/22.09.23%20%EC%8B%A4%EC%8A%B5/%EB%82%B4%EB%B6%80%20%EC%8A%A4%ED%83%80%EC%9D%BC%EC%8B%9C%ED%8A%B8%20%EC%9E%91%EC%84%B1.html">#          (클릭하기)
+                            기초를 단단히 다지기 위해서는 철저한 복습이 중요하다. 항상 교수님의 말씀을 경청 해야 한다.
+                            </a>
+                        </h3>                          
+                        
                     </div>
                 </div>
                 <div class="center_prolog"><!-- HTML 웹페이지 -->
                     <div>
-                        <img src="html_logo.png" id="pic">
-                        <h1><a href="myhtml.html" >#HTML 기초 문법 정리</a></h1>
+                        <img src="html2.png" id="pic2">
+                        <h1>HTML 기초 문법 정리 (2)</h1>
+                        <h2><a id='red' href="https://drive.google.com/file/d/1kuqZDdIUa3c3v1ROvGttRKR7ctC0zYei/view?usp=share_link">2장 강의자료 (심미나 교수님 협찬)</a></h2>
+                        <h3 id="overlof"><a href="https://github.com/minwocee/HTML_pratice/blob/main/22.09.30%20%EC%8B%A4%EC%8A%B5/(%EC%98%88%EC%A0%9C%203-2%20%EB%B3%B8%EB%AC%B8%20%EB%8B%A8%EB%9D%BD%20%EA%B5%AC%EB%B6%84).html">
+                            #          (클릭하기)#                  
+                            웹 페이지의 기본 구조와 작성 방법을 상세히 알기 위해서는  다양한 관점에서 바라보려는 노력을 해야 한다.
                     </div>
                 </div>
-                <div class="center_prolog"><!-- JAVA 웹페이지 -->
+                <div class="center_prolog"><!-- HTML 웹페이지 -->
                     <div>
-                        <img src="javascript.png" id="pic2">
-                        <h1><a href="my_javascript.html" >#JAVA Script 기초 문법 정리</a></h1>
+                        <img src="html2.png" id="pic2">
+                        <h1>HTML 기초 문법 정리 (3)</h1>
+                        <h2><a id='red' href="https://drive.google.com/file/d/1KYem5aNx3izirNCVuioyyOWE8orJbcOp/view?usp=share_link">3장 강의자료 (심미나 교수님 협찬)</a></h2>
+                        <h3 id="overlof"><a href="https://github.com/minwocee/HTML_pratice/tree/main/22.10.07%20%EC%8B%A4%EC%8A%B5(HTML%20%EC%9E%85%EB%A0%A5%20%EC%96%91%EC%8B%9D%20%ED%83%9C%EA%B7%B8%EC%99%80%20%EA%B5%AC%EC%A1%B0%ED%99%94%20%ED%83%9C%EA%B7%B8)">#          (클릭하기)# 
+                            기초 문법을 활용하기 위해서 html 교재를 적극적으로 활용하자. 책을 반복해서 읽는게 정말 중요하다.                               """
+                            
+                            """</a>
                     </div>
                 </div>
-                <div class="center_prolog"><!-- C++ 소개 웹페이지-->
-                    <div>
-                        <img src="ISO_C++_Logo.svg.png" id="pic">
-                        <h1><a href="" >#C++ 기초 문법 정리</a></h1>
-                    </div>
-                </div>
-                <div class="center_prolog"><!-- 일상생활 소개 웹페이지-->
-                    <div>
-                        <img src="sku_logo.png" id="pic2">
-                        <h1><a href="" >#성결대학교 일상 생활 기록</a></h1>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="main_con_right"><!--본문 우측 구성-->
